@@ -1,0 +1,36 @@
+/* Style the header with a grey background and some padding */
+.header {
+  //overflow: hidden;
+  background-color: #5b0e0e;
+  height: 50.8px;
+  line-height: 50.8px;
+  .header1{
+    text-align: center;
+
+  }
+  .header-text{
+    color: #ffffff;
+    margin-right: 30px;
+    font-weight: 550;
+    display: inline-block;
+
+
+
+  }
+
+  .fa-shopping-cart{
+    color: #ffffff;
+    display: inline-block;
+  }
+  //.logo1 {
+  //  display: none;
+  //}
+  //&:hover {
+  //  .logo1 {
+  //    display: block;
+  //    //font-size: 100px !important;
+  //    //color: red;
+  //  }
+  //}
+}
+

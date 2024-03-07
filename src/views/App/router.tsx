@@ -6,6 +6,7 @@ import {
   RouteObject,
   RouterProvider,
 } from "react-router-dom"
+import Header from "@/views/Layout/Header";
 
 const Signin = lazy(() => import("@/views/Auth/Signin"))
 const Welcome = lazy(() => import("@/views/Welcome"))
@@ -24,6 +25,10 @@ const privateRoute: RouteObject[] = [
         path: "city",
         element: <City />,
       },
+      {
+        path: "header",
+        element: <Header />,
+      },
     ],
   },
 ]
@@ -35,9 +40,20 @@ const rootRoute: RouteObject[] = [
     children: privateRoute,
   },
   {
-    path: "/signin",
-    element: <Signin />,
+    path: "auth",
+    element: <RouterHOC />,
+    children: [
+      {
+        path: "/auth/signin",
+        element: <Signin />,
+      },
+      {
+        path: "/auth/login",
+        element: <Signin />,
+      },
+    ],
   },
+
 ]
 
 const router = createBrowserRouter(rootRoute)

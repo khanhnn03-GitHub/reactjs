@@ -5,6 +5,8 @@ import { MacScrollbar } from "mac-scrollbar"
 import { Ref, Suspense } from "react"
 import { Outlet } from "react-router-dom"
 import { useSetRecoilState } from "recoil"
+import Sider from "@/views/Layout/Sider";
+import './style.scss'
 
 const Content = () => {
   const setContainerScroll = useSetRecoilState(atomContainerScroll)
@@ -21,6 +23,7 @@ const Content = () => {
       <Layout.Content className="px-5 pt-5">
         <Suspense fallback={<LoadingFallback />}>
           <Outlet />
+
         </Suspense>
       </Layout.Content>
     </MacScrollbar>
