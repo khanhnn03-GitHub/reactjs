@@ -5,6 +5,8 @@ import Footer from "./Footer"
 import Sider from "./Sider"
 import Header from "@/views/Layout/Header";
 
+// eslint-disable-next-line import/extensions
+
 const LayoutComponent = () => {
     return (
         <Layout className="h-screen bg-white">
@@ -12,7 +14,6 @@ const LayoutComponent = () => {
             <Layout>
                 <Header/>
                 <Content/>
-
                 <Footer/>
             </Layout>
         </Layout>

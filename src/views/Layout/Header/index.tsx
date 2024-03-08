@@ -14,14 +14,17 @@ const Header = () => {
                 <a className="header-text">GIỚI THIỆU</a>
                 <a className="header-text">SẢN PHẨM
                     <span > <RiArrowDropDownLine style={{ fontSize: '25px' } } /> </span>
+                    <a href="#" className="dong-trung-ha-thao-tuoi">Đông trùng hạ thảo tươi</a>
                 </a>
                 <a className="header-text">TIN TỨC</a>
                 <a className="header-text">HÌNH ẢNH-VIDEO
-                    <span > <RiArrowDropDownLine style={{ fontSize: '25px' } } /> </span>
+                    <span> <RiArrowDropDownLine style={{ fontSize: '25px' } } /> </span>
+                    <a href="#" className="hinh-anh-video"> Hình Ảnh Video </a>
                 </a>
                 <a className="header-text">PHÂN TÍCH-KIẺM NGHIỆM</a>
                 <a className="header-text">DANH SÁCH ĐẠI LÝ</a>
                 <a className="header-text">LIÊN HỆ
+
                     <span > <RiArrowDropDownLine style={{ fontSize: '25px' } } /> </span>
                 </a>
                 <a className="header-text" > <IoIosCart /> </a>

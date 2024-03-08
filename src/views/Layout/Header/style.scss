@@ -1,12 +1,35 @@
 /* Style the header with a grey background and some padding */
 .header {
-  //overflow: hidden;
+
   background-color: #5b0e0e;
   height: 50.8px;
   line-height: 50.8px;
   .header1{
     text-align: center;
 
+  }
+  &:hover{
+    .dong-trung-ha-thao-tuoi{
+      background-color: #5b0e0e;
+      padding: 10px 5px;
+      display: inline;
+    }
+
+  }
+  &:hover{
+    .hinh-anh-video{
+      background-color: #5b0e0e;
+      padding: 10px 5px;
+      display: inline;
+    }
+  }
+  .dong-trung-ha-thao-tuoi{
+    display: none;
+    color: white;
+  }
+  .hinh-anh-video{
+    display: none;
+    color: white;
   }
   .header-text{
     color: #ffffff;
