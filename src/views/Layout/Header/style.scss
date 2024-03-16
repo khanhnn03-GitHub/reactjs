@@ -1,59 +1,67 @@
 /* Style the header with a grey background and some padding */
 .header {
+  >a {
+    &:hover{
+      color: #dd6334;
+    }
 
+    text-decoration: none;
+  }
   background-color: #5b0e0e;
   height: 50.8px;
   line-height: 50.8px;
-  .header1{
-    text-align: center;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  }
-  &:hover{
-    .dong-trung-ha-thao-tuoi{
-      background-color: #5b0e0e;
-      padding: 10px 5px;
-      display: inline;
-    }
-
-  }
-  &:hover{
-    .hinh-anh-video{
-      background-color: #5b0e0e;
-      padding: 10px 5px;
-      display: inline;
-    }
-  }
-  .dong-trung-ha-thao-tuoi{
-    display: none;
-    color: white;
-  }
-  .hinh-anh-video{
-    display: none;
-    color: white;
-  }
-  .header-text{
+  .header-text {
     color: #ffffff;
     margin-right: 30px;
     font-weight: 550;
-    display: inline-block;
     align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
 
+    .item {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      display: none;
+      color: white;
+      background-color: #5b0e0e;
+      white-space: nowrap;
+      padding: 0 0.5rem;
+      text-decoration: none;
+    }
+
+    &:hover {
+      .item {
+        display: block;
+      }
+    }
 
   }
 
-  .fa-shopping-cart{
+  .fa-shopping-cart {
     color: #ffffff;
     display: inline-block;
   }
-  //.logo1 {
-  //  display: none;
-  //}
-  //&:hover {
-  //  .logo1 {
-  //    display: block;
-  //    //font-size: 100px !important;
-  //    //color: red;
-  //  }
-  //}
+
+
 }
 
+.d-flex {
+  display: flex;
+
+}
+
+.abc {
+  top: 23px;
+  right: 40px;
+  width: 300px;
+  background: white ;
+  padding: 5px;
+}

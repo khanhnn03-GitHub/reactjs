@@ -1,0 +1,99 @@
+.header-collections{
+  background-image: url("https://theme.hstatic.net/1000269374/1000344896/14/ft_bg_img.png?v=227");
+  height: 300px;
+  width: 100%;
+  padding: 50px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.breadcrumb-wrapper{
+  height: 300px;
+  padding: 30px 0;
+}
+.breadcrumb-content{
+  position: absolute;
+  top: 35%;
+  left: 40%;
+
+}
+.wrapper{
+  padding: 0 30px;
+}
+.breadcrumb-big{
+  color: white;
+  text-align: center;
+
+}
+.breadcrumb-small{
+  color: white;
+  text-align: center;
+  >a{
+    color: white;
+    text-decoration: none;
+  }
+}
+.page-wrapper {
+  padding: 30px 0px;
+}
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.title-clt{
+  display: flex;
+  justify-content: space-between;
+}
+.collection-head{
+  margin-bottom: 30px;
+}
+
+
+.btn-product-actions{
+  color: white;
+  background-color: #5b0e0e;
+}
+.product-title>a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+.icon{
+  color: white;
+  padding: 4px 5px;
+  background-color: #5b0e0e;
+}
+.current-price{
+  font-weight: bold;
+}
+
+.accordion{
+  padding: 15px;
+  background-color: #5b0e0e;
+  color: white;
+  font-weight: bold;
+}
+.collection-title{
+  font-weight: bold;
+}
+.panel{
+  padding: 8px 0px 8px 15px;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 30px;
+  >a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+}
+.col-3{
+  padding: 0 0 0 70px;
+}
+.mb-3{
+  padding: 15px 0px 0px 15px;
+  border: 1px solid #e6e6e6;
+}
+.col-9{
+  padding: 0px 0px 0px 30px;
+}

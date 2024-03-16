@@ -1,21 +1,34 @@
 import {Layout} from "antd"
-import {memo} from "react"
+import React, {memo, Ref} from "react"
 import Content from "./Content"
 import Footer from "./Footer"
 import Sider from "./Sider"
 import Header from "@/views/Layout/Header";
+import {MacScrollbar} from "mac-scrollbar";
+import {useSetRecoilState} from "recoil";
+import {atomContainerScroll} from "@/recoil/atoms/config";
 
 // eslint-disable-next-line import/extensions
 
 const LayoutComponent = () => {
+    const setContainerScroll = useSetRecoilState(atomContainerScroll)
     return (
-        <Layout className="h-screen bg-white">
+        <Layout className="bg-white d-block">
             {/*<Sider />*/}
-            <Layout>
+            {/*<Layout>*/}
+            <MacScrollbar
+                className="h-screen overflow-x-hidden relative bg-white"
+                trackStyle={() => ({
+                    background: "transparent",
+                    borderLeft: "none",
+                })}
+                ref={setContainerScroll as Ref<HTMLElement> | undefined}
+            >
                 <Header/>
                 <Content/>
                 <Footer/>
-            </Layout>
+            </MacScrollbar>
+            {/*</Layout>*/}
         </Layout>
     )
 }
