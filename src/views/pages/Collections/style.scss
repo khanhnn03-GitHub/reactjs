@@ -59,11 +59,7 @@
   color: #000000;
   font-weight: bold;
 }
-.icon{
-  color: white;
-  padding: 4px 5px;
-  background-color: #5b0e0e;
-}
+
 .current-price{
   font-weight: bold;
 }
@@ -96,4 +92,30 @@
 }
 .col-9{
   padding: 0px 0px 0px 30px;
+}
+
+
+.icon1{
+  color: white;
+  padding: 4px 5px;
+  background-color: #5b0e0e;
+}.icon2 {
+   color: white;
+   padding: 4px 5px;
+   background-color: #5b0e0e;
+ }
+.product-item :hover{
+  display: block;
+  .icon1{
+    margin-left: 35%;
+    display: block;
+  }
+  .icon2{
+    margin-right: 35%;
+    display: block;
+  }
+  .btn-product-actions{
+    margin-bottom: 43px;
+    display: block;
+  }
 }

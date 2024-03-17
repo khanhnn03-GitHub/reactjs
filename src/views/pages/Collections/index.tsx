@@ -6,6 +6,7 @@ import { FaCartPlus } from "react-icons/fa";
 import {Button, Collapse, Form} from "react-bootstrap";
 import React, {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
+import sp5 from "@/assets/images/sp5.webp";
 const Collections = () => {
     const navigate = useNavigate()
     const [open, setOpen] = useState<any[]>([
@@ -155,135 +156,114 @@ const Collections = () => {
                                                 </div>
                                             </div>
                                                 <div className="row">
+
                                                     <div className="col-md-4">
                                                         <div className="product-item">
-                                                            <div className="product-img">
+                                                            <div className="product-img" style={{position: "relative",overflow: "hidden"}}>
                                                                 <a href="#">
-                                                                    <img src={box1}/>
+                                                                    <img src={sp5} style={{maxWidth: "100%"}}/>
                                                                 </a>
-                                                                <div className="product-actions">
-                                                                    <span className="icon" style={{textAlign:"center"}}> <FaSearchPlus />  </span>
-                                                                    <button className="btn-product-actions">
+                                                                <div className="product-actions" >
+                                                                    <span className="icon1" style={{textAlign:"center", position: "absolute",bottom: "10px",left: "-10%",transition: "all 0.3s"}}> <FaSearchPlus />  </span>
+                                                                    <button className="btn-product-actions" style={{position: "absolute", bottom: "-15%",left: "37%",transition: "all 0.3s"}}>
                                                                         <span>MUA NGAY</span>
                                                                     </button>
-                                                                    <span className="icon"> <FaCartPlus /> </span>
+                                                                    <span className="icon2" style={{textAlign:"center", position: "absolute",bottom: "10px",right: "-40px",transition: "all 0.3s"}}> <FaCartPlus /> </span>
                                                                 </div>
                                                             </div>
                                                             <div className="product-title">
-                                                                <a href="#">HỘP COMBO QUÀ TẾT 2024</a>
+                                                                <a href="#">SKT</a>
                                                             </div>
                                                             <div className="product-price">
-                                                                <span className="current-price">1,400,000₫</span>
+                                                                <span className="current-price">300,000₫</span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-md-4">
                                                         <div className="product-item">
-                                                            <div className="product-img">
+                                                            <div className="product-img" style={{position: "relative",overflow: "hidden"}}>
                                                                 <a href="#">
-                                                                    <img src={box1}/>
+                                                                    <img src={sp5} style={{maxWidth: "100%"}}/>
                                                                 </a>
-                                                                <div className="product-actions">
-                                                                    <span className="icon"> <FaSearchPlus />  </span>
-                                                                    <button className="btn-product-actions">
+                                                                <div className="product-actions" >
+                                                                    <span className="icon1" style={{textAlign:"center", position: "absolute",bottom: "10px",left: "-10%",transition: "all 0.3s"}}> <FaSearchPlus />  </span>
+                                                                    <button className="btn-product-actions" style={{position: "absolute", bottom: "-15%",left: "37%",transition: "all 0.3s"}}>
                                                                         <span>MUA NGAY</span>
                                                                     </button>
-                                                                    <span className="icon"> <FaCartPlus /> </span>
+                                                                    <span className="icon2" style={{textAlign:"center", position: "absolute",bottom: "10px",right: "-40px",transition: "all 0.3s"}}> <FaCartPlus /> </span>
                                                                 </div>
                                                             </div>
                                                             <div className="product-title">
-                                                                <a href="#">HỘP COMBO QUÀ TẾT 2024</a>
+                                                                <a href="#">SKT</a>
                                                             </div>
                                                             <div className="product-price">
-                                                                <span className="current-price">1,400,000₫</span>
+                                                                <span className="current-price">300,000₫</span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-md-4">
                                                         <div className="product-item">
-                                                            <div className="product-img">
+                                                            <div className="product-img" style={{position: "relative",overflow: "hidden"}}>
                                                                 <a href="#">
-                                                                    <img src={box1}/>
+                                                                    <img src={sp5} style={{maxWidth: "100%"}}/>
                                                                 </a>
-                                                                <div className="product-actions">
-                                                                    <span className="icon"> <FaSearchPlus />  </span>
-                                                                    <button className="btn-product-actions">
+                                                                <div className="product-actions" >
+                                                                    <span className="icon1" style={{textAlign:"center", position: "absolute",bottom: "10px",left: "-10%",transition: "all 0.3s"}}> <FaSearchPlus />  </span>
+                                                                    <button className="btn-product-actions" style={{position: "absolute", bottom: "-15%",left: "37%",transition: "all 0.3s"}}>
                                                                         <span>MUA NGAY</span>
                                                                     </button>
-                                                                    <span className="icon"> <FaCartPlus /> </span>
+                                                                    <span className="icon2" style={{textAlign:"center", position: "absolute",bottom: "10px",right: "-40px",transition: "all 0.3s"}}> <FaCartPlus /> </span>
                                                                 </div>
                                                             </div>
                                                             <div className="product-title">
-                                                                <a href="#">HỘP COMBO QUÀ TẾT 2024</a>
+                                                                <a href="#">SKT</a>
                                                             </div>
                                                             <div className="product-price">
-                                                                <span className="current-price">1,400,000₫</span>
+                                                                <span className="current-price">300,000₫</span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-md-4">
                                                         <div className="product-item">
-                                                            <div className="product-img">
+                                                            <div className="product-img" style={{position: "relative",overflow: "hidden"}}>
                                                                 <a href="#">
-                                                                    <img src={box1}/>
+                                                                    <img src={sp5} style={{maxWidth: "100%"}}/>
                                                                 </a>
-                                                                <div className="product-actions">
-                                                                    <span className="icon"> <FaSearchPlus />  </span>
-                                                                    <button className="btn-product-actions">
+                                                                <div className="product-actions" >
+                                                                    <span className="icon1" style={{textAlign:"center", position: "absolute",bottom: "10px",left: "-10%",transition: "all 0.3s"}}> <FaSearchPlus />  </span>
+                                                                    <button className="btn-product-actions" style={{position: "absolute", bottom: "-15%",left: "37%",transition: "all 0.3s"}}>
                                                                         <span>MUA NGAY</span>
                                                                     </button>
-                                                                    <span className="icon"> <FaCartPlus /> </span>
+                                                                    <span className="icon2" style={{textAlign:"center", position: "absolute",bottom: "10px",right: "-40px",transition: "all 0.3s"}}> <FaCartPlus /> </span>
                                                                 </div>
                                                             </div>
                                                             <div className="product-title">
-                                                                <a href="#">HỘP COMBO QUÀ TẾT 2024</a>
+                                                                <a href="#">SKT</a>
                                                             </div>
                                                             <div className="product-price">
-                                                                <span className="current-price">1,400,000₫</span>
+                                                                <span className="current-price">300,000₫</span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="col-md-4">
                                                         <div className="product-item">
-                                                            <div className="product-img">
+                                                            <div className="product-img" style={{position: "relative",overflow: "hidden"}}>
                                                                 <a href="#">
-                                                                    <img src={box1}/>
+                                                                    <img src={sp5} style={{maxWidth: "100%"}}/>
                                                                 </a>
-                                                                <div className="product-actions">
-                                                                    <span className="icon"> <FaSearchPlus />  </span>
-                                                                    <button className="btn-product-actions">
+                                                                <div className="product-actions" >
+                                                                    <span className="icon1" style={{textAlign:"center", position: "absolute",bottom: "10px",left: "-10%",transition: "all 0.3s"}}> <FaSearchPlus />  </span>
+                                                                    <button className="btn-product-actions" style={{position: "absolute", bottom: "-15%",left: "37%",transition: "all 0.3s"}}>
                                                                         <span>MUA NGAY</span>
                                                                     </button>
-                                                                    <span className="icon"> <FaCartPlus /> </span>
+                                                                    <span className="icon2" style={{textAlign:"center", position: "absolute",bottom: "10px",right: "-40px",transition: "all 0.3s"}}> <FaCartPlus /> </span>
                                                                 </div>
                                                             </div>
                                                             <div className="product-title">
-                                                                <a href="#">HỘP COMBO QUÀ TẾT 2024</a>
+                                                                <a href="#">SKT</a>
                                                             </div>
                                                             <div className="product-price">
-                                                                <span className="current-price">1,400,000₫</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-4">
-                                                        <div className="product-item">
-                                                            <div className="product-img">
-                                                                <a href="#">
-                                                                    <img src={box1}/>
-                                                                </a>
-                                                                <div className="product-actions">
-                                                                    <span className="icon"> <FaSearchPlus />  </span>
-                                                                    <button className="btn-product-actions">
-                                                                        <span>MUA NGAY</span>
-                                                                    </button>
-                                                                    <span className="icon"> <FaCartPlus /> </span>
-                                                                </div>
-                                                            </div>
-                                                            <div className="product-title">
-                                                                <a href="#">HỘP COMBO QUÀ TẾT 2024</a>
-                                                            </div>
-                                                            <div className="product-price">
-                                                                <span className="current-price">1,400,000₫</span>
+                                                                <span className="current-price">300,000₫</span>
                                                             </div>
                                                         </div>
                                                     </div>
