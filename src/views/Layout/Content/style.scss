@@ -135,6 +135,8 @@
   margin-left: 15px;
   object-fit: cover;
   flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
   .hqu-img img{
     position: absolute;
     top: 50%;

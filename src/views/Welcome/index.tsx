@@ -138,14 +138,14 @@ const Welcome = () => {
             title: "CÔNG DỤNG CỦA ĐÔNG TRÙNG HẠ THẢO LÀ GÌ?",
         },
     ]);
-    const setCollapseExpand = (index: number) => {
-        setOpen((o) => {
-            o[index].isOpen = !o[index].isOpen;
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-            // @ts-ignore
-            return [].concat(o);
-        })
-    }
+    // const setCollapseExpand = (index: number) => {
+    //     setOpen((o) => {
+    //         o[index].isOpen = !o[index].isOpen;
+    //         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //         // @ts-ignore
+    //         return [].concat(o);
+    //     })
+    // }
     return (
         <>
             {/*<div>*/}
@@ -191,7 +191,7 @@ const Welcome = () => {
                                                                  onClick={() => handleClickProduct(image)}>
                                                                 <div className="product-img">
                                                                     <a href="#">
-                                                                        <img src={image.link}/>
+                                                                        <img style={{width:"100%"}} src={image.link}/>
                                                                     </a>
                                                                 </div>
                                                                 <div className="product-title">
@@ -247,8 +247,7 @@ const Welcome = () => {
                                                             </div>
                                                         </div>
                                                         <div className="hqu-img">
-                                                            <img
-                                                                src="https://theme.hstatic.net/1000269374/1000344896/14/hqu_detail_img1.png?v=227"/>
+                                                            <img style={{position:"absolute", top:"27%", left:"22%"}} src="https://theme.hstatic.net/1000269374/1000344896/14/hqu_detail_img1.png?v=227"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -263,8 +262,7 @@ const Welcome = () => {
                                                             </div>
                                                         </div>
                                                         <div className="hqu-img">
-                                                            <img
-                                                                src="https://theme.hstatic.net/1000269374/1000344896/14/hqu_detail_img1.png?v=227"/>
+                                                            <img style={{position:"absolute", top:"27%", left:"22%"}} src="https://theme.hstatic.net/1000269374/1000344896/14/hqu_detail_img1.png?v=227"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -283,8 +281,7 @@ const Welcome = () => {
                                                     className="grid__item-large--one-whole-medium--one-third-small--one-whole">
                                                     <div className="hqu-item-clearfix">
                                                         <div className="hqu-img">
-                                                            <img
-                                                                src="https://theme.hstatic.net/1000269374/1000344896/14/hqu_detail_img1.png?v=227"/>
+                                                            <img style={{position:"absolute", top:"27%", left:"22%"}} src="https://theme.hstatic.net/1000269374/1000344896/14/hqu_detail_img1.png?v=227"/>
                                                         </div>
                                                         <div className="hqu-content-text-left">
                                                             <div className="hqu-title">ĐỐI VỚI PHỤ NỮ VÀ TRẺ EM</div>
@@ -299,8 +296,7 @@ const Welcome = () => {
                                                     className="grid__item-large--one-whole-medium--one-third-small--one-whole">
                                                     <div className="hqu-item-clearfix">
                                                         <div className="hqu-img">
-                                                            <img
-                                                                src="https://theme.hstatic.net/1000269374/1000344896/14/hqu_detail_img1.png?v=227"/>
+                                                            <img style={{position:"absolute", top:"27%", left:"22%"}} src="https://theme.hstatic.net/1000269374/1000344896/14/hqu_detail_img1.png?v=227"/>
                                                         </div>
                                                         <div className="hqu-content-text-left">
                                                             <div className="hqu-title">ĐỐI VỚI NAM GIỚI</div>
@@ -314,8 +310,7 @@ const Welcome = () => {
                                                     className="grid__item-large--one-whole-medium--one-third-small--one-whole">
                                                     <div className="hqu-item-clearfix">
                                                         <div className="hqu-img">
-                                                            <img
-                                                                src="https://theme.hstatic.net/1000269374/1000344896/14/hqu_detail_img1.png?v=227"/>
+                                                            <img style={{position:"absolute", top:"27%", left:"22%"}} src="https://theme.hstatic.net/1000269374/1000344896/14/hqu_detail_img1.png?v=227"/>
                                                         </div>
                                                         <div className="hqu-content-text-left">
                                                             <div className="hqu-title">ĐỐI VỚI NGƯỜI CAO TUỔI</div>
@@ -362,76 +357,6 @@ const Welcome = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/*<div className="grid__item-large--one-half-medium--one-half-small--one-whole">*/}
-                                        {/*    <div className="item-large">*/}
-                                        {/*        <div*/}
-                                        {/*            className="grid__item-large--one-third-medium--one-third-small--one-half">*/}
-                                        {/*            {*/}
-                                        {/*                galleryItem.map((item, index) => (*/}
-                                        {/*                    <div key={index}>*/}
-                                        {/*                        <div className="hg-item">*/}
-                                        {/*                            <a>*/}
-                                        {/*                                <img className="hg-item1" src={item.itemSrc}/>*/}
-                                        {/*                            </a>*/}
-                                        {/*                        </div>*/}
-                                        {/*                    </div>*/}
-                                        {/*                ))*/}
-                                        {/*            }*/}
-                                        {/*        </div>*/}
-                                        {/*        /!*<div className="flex-item1">*!/*/}
-                                        {/*        /!*    <div className="grid__item-large--one-third-medium--one-third-small--one-half">*!/*/}
-                                        {/*        /!*        <div className="hg-item">*!/*/}
-                                        {/*        /!*            <a>*!/*/}
-                                        {/*        /!*                <img className="hg-item1" src={hgc4}/>*!/*/}
-                                        {/*        /!*            </a>*!/*/}
-                                        {/*        /!*        </div>*!/*/}
-                                        {/*        /!*    </div>*!/*/}
-                                        {/*        /!*    <div className="grid__item-large--one-third-medium--one-third-small--one-half">*!/*/}
-                                        {/*        /!*        <div className="hg-item">*!/*/}
-                                        {/*        /!*            <a>*!/*/}
-                                        {/*        /!*                <img className="hg-item1" src={hgc4}/>*!/*/}
-                                        {/*        /!*            </a>*!/*/}
-                                        {/*        /!*        </div>*!/*/}
-                                        {/*        /!*    </div>*!/*/}
-                                        {/*        /!*    <div className="grid__item-large--one-third-medium--one-third-small--one-half">*!/*/}
-                                        {/*        /!*        <div className="hg-item">*!/*/}
-                                        {/*        /!*            <a>*!/*/}
-                                        {/*        /!*                <img className="hg-item1" src={hgc4}/>*!/*/}
-                                        {/*        /!*            </a>*!/*/}
-                                        {/*        /!*        </div>*!/*/}
-                                        {/*        /!*    </div>*!/*/}
-                                        {/*        /!*</div>*!/*/}
-                                        {/*        /!*<div className="flex-item2">*!/*/}
-                                        {/*        /!*    <div className="grid__item-large--one-third-medium--one-third-small--one-half">*!/*/}
-                                        {/*        /!*        <div className="hg-item">*!/*/}
-                                        {/*        /!*            <a>*!/*/}
-                                        {/*        /!*                <img className="hg-item1" src={hgc4}/>*!/*/}
-                                        {/*        /!*            </a>*!/*/}
-                                        {/*        /!*        </div>*!/*/}
-                                        {/*        /!*    </div>*!/*/}
-                                        {/*        /!*    <div className="grid__item-large--one-third-medium--one-third-small--one-half">*!/*/}
-                                        {/*        /!*        <div className="hg-item">*!/*/}
-                                        {/*        /!*            <a>*!/*/}
-                                        {/*        /!*                <img className="hg-item1" src={hgc4}/>*!/*/}
-                                        {/*        /!*            </a>*!/*/}
-                                        {/*        /!*        </div>*!/*/}
-                                        {/*        /!*    </div>*!/*/}
-                                        {/*        /!*    <div className="grid__item-large--one-third-medium--one-third-small--one-half">*!/*/}
-                                        {/*        /!*        <div className="hg-item">*!/*/}
-                                        {/*        /!*            <a>*!/*/}
-                                        {/*        /!*                <img className="hg-item1" src={hgc4}/>*!/*/}
-                                        {/*        /!*            </a>*!/*/}
-                                        {/*        /!*        </div>*!/*/}
-                                        {/*        /!*    </div>*!/*/}
-                                        {/*        /!*</div>*!/*/}
-                                        {/*    </div>*/}
-                                        {/*</div>*/}
-                                        {/*<div className="grid__item-large--one-half-medium--one-half-small--one-whole">*/}
-                                        {/*    <div className="hg-item">*/}
-                                        {/*        <img className="hg-item2" src={vd_bg}/>*/}
-                                        {/*        <div className="hg-item-title-text-center">VIỆT NAM</div>*/}
-                                        {/*    </div>*/}
-                                        {/*</div>*/}
                                     </div>
                                 </div>
                             </div>
